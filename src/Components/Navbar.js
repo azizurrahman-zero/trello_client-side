@@ -1,10 +1,23 @@
 import React from 'react';
+import logo from "../Resource/logo.png"
 
-const Navbar = () => {
+const Navbar = ({ setAddTicket }) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <div className='bg-[#f4f4f4] py-5 px-20 flex justify-between items-center'>
+                <div className="logo">
+                    <img className='w-24' src={logo} alt="logo" />
+                </div>
+                <div>
+                    <button
+                        onClick={() => setAddTicket(true)}
+                        className="bg-[#007CC3] font-roboto text-white px-6 py-2 rounded font-bold"
+                    >
+                        Add Ticket
+                    </button>
+                </div>
+            </div>
+        </>
     );
 };
 
