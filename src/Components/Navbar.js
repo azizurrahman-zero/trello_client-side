@@ -4,7 +4,7 @@ import logo from "../Resource/logo.png"
 const Navbar = ({ setAddTicket }) => {
     return (
         <>
-            <div className='bg-[#f4f4f4] py-5 px-20 flex justify-between items-center'>
+            <div className='bg-[#f4f4f4] py-5 md:px-20 px-5 flex justify-between items-center'>
                 <div className="logo">
                     <img className='w-24' src={logo} alt="logo" />
                 </div>

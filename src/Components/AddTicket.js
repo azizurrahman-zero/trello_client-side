@@ -36,7 +36,7 @@ const AddTicket = ({ setAddTicket }) => {
 
     return (
         <div className='fixed w-screen h-screen bg-[#64646433] flex justify-center items-center'>
-            <div className='bg-white absolute shadow-md rounded w-2/5 py-4 px-5'>
+            <div className='bg-white absolute shadow-md rounded md:w-2/5 w-10/12 py-4 px-5'>
                 <h1 className='font-bold font-roboto text-xl'>Add New</h1>
                 <button
                     onClick={() => setAddTicket(false)}
