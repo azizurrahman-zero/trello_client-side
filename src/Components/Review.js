@@ -4,7 +4,7 @@ import List from './List';
 const Review = ({ setEditTicket }) => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/reviews")
+        fetch("https://sleepy-garden-27756.herokuapp.com/reviews")
             .then((res) => res.json())
             .then((data) => setReviews(data));
     }, [reviews]);

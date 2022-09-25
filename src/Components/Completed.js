@@ -4,7 +4,7 @@ import List from './List';
 const Completed = ({ setEditTicket }) => {
     const [completed, setCompleted] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/completed")
+        fetch("https://sleepy-garden-27756.herokuapp.com/completed")
             .then((res) => res.json())
             .then((data) => setCompleted(data));
     }, [completed]);

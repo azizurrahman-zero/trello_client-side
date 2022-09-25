@@ -4,7 +4,7 @@ import List from './List';
 const Research = ({ setEditTicket }) => {
     const [researchs, setResearchs] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/researchs")
+        fetch("https://sleepy-garden-27756.herokuapp.com/researchs")
             .then((res) => res.json())
             .then((data) => setResearchs(data));
     }, [researchs]);
