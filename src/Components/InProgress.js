@@ -4,7 +4,7 @@ import List from './List';
 const InProgress = ({ setEditTicket }) => {
     const [inProgress, setInProgress] = useState([]);
     useEffect(() => {
-        fetch("https://sleepy-garden-27756.herokuapp.com/inProgress")
+        fetch("https://trello-2v90.onrender.com/inProgress")
             .then((res) => res.json())
             .then((data) => setInProgress(data));
     }, [inProgress]);

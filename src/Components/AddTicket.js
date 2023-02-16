@@ -14,7 +14,7 @@ const AddTicket = ({ setAddTicket }) => {
         }
 
         // send data to server
-        fetch('https://sleepy-garden-27756.herokuapp.com/add', {
+        fetch('https://trello-2v90.onrender.com/add', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -19,7 +19,7 @@ const EditTicket = ({ editTicket, setEditTicket }) => {
             status: newStatus,
         }
 
-        fetch(`https://sleepy-garden-27756.herokuapp.com/edit/${_id}`, {
+        fetch(`https://trello-2v90.onrender.com/edit/${_id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json",

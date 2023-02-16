@@ -4,7 +4,7 @@ import List from './List';
 const Completed = ({ setEditTicket }) => {
     const [completed, setCompleted] = useState([]);
     useEffect(() => {
-        fetch("https://sleepy-garden-27756.herokuapp.com/completed")
+        fetch("https://trello-2v90.onrender.com/completed")
             .then((res) => res.json())
             .then((data) => setCompleted(data));
     }, [completed]);

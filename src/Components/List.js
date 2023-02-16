@@ -7,7 +7,7 @@ const List = ({ ticket, setEditTicket }) => {
     const { _id, title, description } = ticket;
 
     const handleDeleteButton = () => {
-        fetch(`https://sleepy-garden-27756.herokuapp.com/delete/${_id}`, {
+        fetch(`https://trello-2v90.onrender.com/delete/${_id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
