@@ -4,7 +4,7 @@ import List from './List';
 const Research = ({ setEditTicket }) => {
     const [researchs, setResearchs] = useState([]);
     useEffect(() => {
-        fetch("https://sleepy-garden-27756.herokuapp.com/researchs")
+        fetch("https://trello-2v90.onrender.com/researchs")
             .then((res) => res.json())
             .then((data) => setResearchs(data));
     }, [researchs]);
