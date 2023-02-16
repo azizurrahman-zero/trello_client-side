@@ -4,7 +4,7 @@ import List from './List';
 const ToDo = ({ setEditTicket }) => {
     const [todos, setTodos] = useState([]);
     useEffect(() => {
-        fetch("https://sleepy-garden-27756.herokuapp.com/todos")
+        fetch("https://trello-2v90.onrender.com/todos")
             .then((res) => res.json())
             .then((data) => setTodos(data));
     }, [todos]);
