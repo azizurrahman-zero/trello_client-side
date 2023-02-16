@@ -8,7 +8,7 @@ import Loading from './Components/Loading';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("https://sleepy-garden-27756.herokuapp.com/").then(() =>
+    fetch("https://trello-2v90.onrender.com/").then(() =>
       setLoading(false)
     );
   }, []);
