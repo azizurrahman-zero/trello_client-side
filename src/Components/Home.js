@@ -49,7 +49,8 @@ const Home = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 flex flex-col justify-between">
+        <div>
         <Navbar 
           setAddTicket={setAddTicket} 
           darkMode={darkMode} 
@@ -59,6 +60,7 @@ const Home = () => {
         <main className="container mx-auto px-4 py-6 md:px-6 text-gray-900 dark:text-gray-100">
           <AllList setEditTicket={setEditTicket} />
         </main>
+        </div>
 
         <Footer/>
         
