@@ -1,23 +1,41 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Trello",
+  "name": "Trello Clone",
+  "description": "A clone of the Trello application built with React and Redux.",
+  "lang": "en-US",
+  "orientation": "portrait",
+  "scope": "/",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://trello.com"
+    }
+  ],
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
+  "prefer_related_applications": false,
+  "splash_pages": {
+    "default": {
+      "src": "favicon.png",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    }
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

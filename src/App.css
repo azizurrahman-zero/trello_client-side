@@ -1,5 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-.font-roboto{
-    font-family: 'Roboto', sans-serif;
+.toast-container {
+  --toastify-color-success: #4f46e5;
+  --toastify-color-error: #ef4444;
+  --toastify-color-warning: #eab308;
+  --toastify-color-info: #3b82f6;
+}
+
+/* Custom animations for toasts */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.Toastify__toast--enter {
+  animation: slide-in-right 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Toastify__toast--exit {
+  animation: slide-out-right 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Dark mode toast styles */
+.dark .Toastify__toast {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.dark .Toastify__close-button {
+  color: #d1d5db;
+}
+
+.dark .Toastify__progress-bar {
+  background-color: rgba(255, 255, 255, 0.2);
 }
