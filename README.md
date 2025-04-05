@@ -7,7 +7,7 @@
 
 A modern, responsive Trello-inspired task management application frontend built with React. This application provides an intuitive drag-and-drop interface for managing tasks across different status categories.
 
-## 🔗 Important Links
+## Important Links
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_Site-2ea44f?style=for-the-badge&logo=vercel)](https://trello-0.netlify.app/)
 [![Client Repository](https://img.shields.io/badge/Client_Code-GitHub-blue?style=for-the-badge&logo=github)](https://github.com/azizurrahman-zero/trello_client-side)
@@ -100,7 +100,7 @@ Click the "Add Task" button in any column to create a new task. Fill in the requ
 - Priority Level (Low, Medium, High)
 
 ### Editing Tasks
-Click on any task card to view details and edit information as needed. Changes are automatically saved to the backend and the UI updates immediately thanks to React Query's cache management.
+Click on any task card's edit icon to edit information as needed. Changes are automatically saved to the backend and the UI updates immediately thanks to React Query's cache management.
 
 ## Project Structure
 
